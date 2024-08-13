@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Fonoaudiológicas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div id="container">
+        <h1>Bem-vindo às Atividades Fonoaudiológicas!</h1>
+        <p>Clique em uma letra para começar a explorar atividades divertidas e educativas que ajudarão a desenvolver suas habilidades linguísticas.</p>
+        <div id="alphabet-box">
+            <!-- Botões para cada letra -->
+            <button onclick="showActivity('A')">A</button>
+            <button onclick="showActivity('B')">B</button>
+            <button onclick="showActivity('C')">C</button>
+            <button onclick="showActivity('D')">D</button>
+            <button onclick="showActivity('E')">E</button>
+            <button onclick="showActivity('F')">F</button>
+            <button onclick="showActivity('G')">G</button>
+            <button onclick="showActivity('H')">H</button>
+            <button onclick="showActivity('I')">I</button>
+            <button onclick="showActivity('J')">J</button>
+            <button onclick="showActivity('K')">K</button>
+            <button onclick="showActivity('L')">L</button>
+            <button onclick="showActivity('M')">M</button>
+            <button onclick="showActivity('N')">N</button>
+            <button onclick="showActivity('O')">O</button>
+            <button onclick="showActivity('P')">P</button>
+            <button onclick="showActivity('Q')">Q</button>
+            <button onclick="showActivity('R')">R</button>
+            <button onclick="showActivity('S')">S</button>
+            <button onclick="showActivity('T')">T</button>
+            <button onclick="showActivity('U')">U</button>
+            <button onclick="showActivity('V')">V</button>
+            <button onclick="showActivity('W')">W</button>
+            <button onclick="showActivity('X')">X</button>
+            <button onclick="showActivity('Y')">Y</button>
+            <button onclick="showActivity('Z')">Z</button>
+        </div>
+
+        <!-- Atividade para a letra B -->
+        <div id="activity-B" class="activity">
+            <h1>Atividade: Formando Palavras com a Letra B</h1>
+            <p>Clique nas letras na ordem correta para formar uma palavra que comece com a letra "B".</p>
+            <div id="letters-container" class="letters-container">
+                <!-- Letras embaralhadas -->
+            </div>
+            <p id="result-B"></p>
+            <p id="score"></p>
+            <button onclick="resetActivity()">Tentar Novamente</button>
+            <button onclick="showAlphabet()">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>

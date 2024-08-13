@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #00C6FF, #0072FF);
+    color: #fff;
+}
+
+#container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+#alphabet-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#alphabet-box button {
+    font-size: 1.5em;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #FF6F61;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#alphabet-box button:hover {
+    background-color: #FF3B2D;
+    transform: scale(1.1);
+}
+
+.activity {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    color: #333;
+}
+
+.activity h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.activity p {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.letters-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.letter {
+    font-size: 2em;
+    padding: 15px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    color: #007BFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.letter:hover {
+    background-color: #007BFF;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#result {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#score {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007BFF;
+}
